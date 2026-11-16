@@ -19,3 +19,6 @@ dependencies = [
 
 [project.scripts]
 gp-saml-gui = "gp_saml_gui:main"
+
+[tool.setuptools]
+py-modules = ["gp_saml_gui"]
