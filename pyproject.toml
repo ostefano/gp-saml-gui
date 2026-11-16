@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gp-saml-gui"
+version = "0.1.1"
+description = "Interactively authenticate to GlobalProtect VPNs that require SAML"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Daniel Lenski", email = "dlenski@gmail.com" },
+]
+license = { text = "GPL v3 or later" }
+dependencies = [
+    "requests",
+    "pywebview",
+]
+
+[project.scripts]
+gp-saml-gui = "gp_saml_gui:main"
