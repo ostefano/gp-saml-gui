@@ -421,12 +421,6 @@ def parse_args(args=None) -> tuple[argparse.ArgumentParser, argparse.Namespace]:
         "--no-proxy", action="store_true", help="Disable system proxy settings"
     )
     p.add_argument(
-        "-w",
-        "--pywebview",
-        action="store_true",
-        help="Use pywebview instead of WebKit2-GTK",
-    )
-    p.add_argument(
         "openconnect_extra",
         nargs="*",
         help="Extra arguments to include in output OpenConnect command-line",
